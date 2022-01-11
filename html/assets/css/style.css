@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+* {
+    margin: 1rem;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 0.3rem rgb(0, 0, 0);
+    background-color: rgb(43, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(83, 0, 0);
+    box-shadow: 0 0 0.3rem rgb(0, 0, 0);
+}
+
+body{ 
+    background: linear-gradient(to top, #870000, #190a05); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(172, 168, 168);;
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    display:inline;
+    flex-flow:row;
+    justify-content: space-around;
+    color: darkred;
+}
+
+.links {
+    width: 90%;
+    padding: 0.1rem;
+    font-size: 1.150rem;
+    border-radius: 1rem;
+    border: 1px solid darkred;
+    background: transparent;
+    transition: .3s;
+    display: inline;
+    font-size: 2.5rem;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    justify-content: space-between;
+
+}
+
+.links:hover {
+    padding: 00.5rem;
+    color: white;
+    background: linear-gradient(to top, #4b0000, #2c0000);
+}
+
+.contato {
+    color: rgb(194, 194, 194);
+}
+
+.email {
+    width: 15%;
+    padding: 0.5rem;
+    font-size: 1.150rem;
+    border-radius: 1rem;
+    border: 1px solid darkred;
+    background: transparent;
+    transition: .3s;
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    display:initial
+}
+
+.email:hover{
+    padding: 0.8rem;
+    color: white;
+    background: linear-gradient(to top, #4b0000, #2c0000);
+}
+
+.git {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.050rem;
+    border-radius: 1rem;
+    border: 1px solid darkred;
+    background: transparent;
+    transition: .3s;
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    display:inline;
+}
+
+.v {
+    display:inline;
+}
+
+.git:hover {
+    padding: 0.8rem;
+    color: white;
+    background: linear-gradient(to top, #4b0000, #2c0000);
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 50vw;
+    color: rgb(172, 168, 168);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+    width: 80%;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.campo label {
+    font-size: 1.275rem;
+    font-weight:bolder;
+    margin-bottom: 5px;
+    background: transparent;
+    align-items: center;
+    color: rgb(172, 168, 168);
+}
+
+.campo input, .campo textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid darkred;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-weight: 200;
+}
+
+button {
+    width: 40%;
+    padding: 0.3rem;
+    font-size: 1.250rem;
+    border-radius: 1rem;
+    border: 1px solid #6d0000;
+    background: transparent;
+    transition: .3s;
+    color: rgb(172, 168, 168);
+}
+
+button:hover{
+    background: linear-gradient(to top, #4b0000, #2c0000);
+    color: white;
+    padding: 0.8rem;
+}
+
+.container2 {
+    color: rgb(172, 168, 168);
+    border-style:solid;
+    border: darkred;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
