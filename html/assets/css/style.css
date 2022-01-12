@@ -177,3 +177,17 @@ button:hover{
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+.br-50 {
+    border-radius: 50px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#textoTodo, .container {
+    color: rgb(172, 168, 168);
+}
