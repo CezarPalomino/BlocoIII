@@ -115,18 +115,18 @@ body{
 }
 
 form {
-    display: flex;
+    display:flexbox;
     flex-flow: column;
     align-items: flex-start;
-    text-align: center;
-    width: 50vw;
+    text-align:start;
+    width: 30vw;
     color: rgb(172, 168, 168);
 }
 
 .campo {
     display: flex;
     flex-direction: column;
-    margin: 0 0 1rem 0;
+    margin: 0 0 .3rem 0;
     width: 80%;
     align-items: flex-start;
     background-color: transparent;
@@ -135,14 +135,17 @@ form {
 .campo label {
     font-size: 1.275rem;
     font-weight:bolder;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     background: transparent;
     align-items: center;
     color: rgb(172, 168, 168);
 }
 
 .campo input, .campo textarea {
-    padding: 0.5rem;
+    padding: 0.2rem;
+    border: 1px;
+    border-radius: 10px;
+    border-color: #4d0202;
     font-size: 1rem;
     border: 1px solid darkred;
     align-items: center;
@@ -156,7 +159,7 @@ button {
     padding: 0.3rem;
     font-size: 1.250rem;
     border-radius: 1rem;
-    border: 1px solid #6d0000;
+    border: 3px solid #4d0202;
     background: transparent;
     transition: .3s;
     color: rgb(172, 168, 168);
@@ -170,24 +173,58 @@ button:hover{
 
 .container2 {
     color: rgb(172, 168, 168);
+    margin: 20px;
     border-style:solid;
     border: darkred;
     display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow:row;
+    justify-content:space-around;
+    align-items:flex-start;
+}
+
+.mapa {
+    width: 250;
+    height: 150;
+    transition: .5s;
+}
+.mapa:hover {
+    width: 300px;
+    height: 250px;
 }
 
 .br-50 {
     border-radius: 50px;
-}
-
-.rodape {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    box-shadow: 10px 10px 5px rgb(43, 1, 1);
 }
 
 #textoTodo, .container {
     color: rgb(172, 168, 168);
+}
+
+.rodape {
+    color: rgb(172, 168, 168);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 10px 10px 5px rgb(43, 1, 1);
+    border-style: solid;
+    border: darkred;
+    padding: 0.3rem;
+    font-size: 1.250rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(43, 1, 1);
+    background: transparent;
+    transition: .3s;
+}
+
+.tm-social:hover {
+    padding: 0.8rem;
+    box-shadow: 13px 13px 8px rgba(48, 0, 0, 0.829);
 }

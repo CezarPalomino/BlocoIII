@@ -11,7 +11,7 @@
     <ul class="menu">
         <li><a href="index.html" class="links"> Home </a></li>
         <li><a href="contato.html" class="links"> Contato </a></li>
-     </ul>
+    </ul>
     <hr>
     <h1 class="contato">Entre em contato:</h1>
     <ul class="contatos">
@@ -21,29 +21,48 @@
     </form>
     <hr>
     <div class="container2">
-      <div>
+    <div>
         <form>
             <div class="campo">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup="validarNome()">
+                <div id="txtNome"></div>            
             </div>
             <div class="campo">
-                 <label for="email">E-mail:</label>
-                 <input type="text" id="nome">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" onkeyup="validarEmail()">
+                <div id="txtEmail"></div>
             </div>
             <div class="campo">
-                 <label for="assunto">Assunto:</label>
-                 <textarea name="assunto" id="assunto" cols="20" rows="5"></textarea>
+                <label for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" cols="20" rows="5" onkeyup="validarAssunto()"></textarea>
+                <div id="txtAssunto"></div>
             </div>
-            <button>Enviar</button>
-      </div>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+    </div>
 
-      <div class="endereco">
+    <div class="endereco">
         <h2>Endereço</h2>
         <p>Av. Paulista 500</p>
         <p>São Paulo - SP</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.4911978502773!2d-46.647862674247335!3d-23.56907573769369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bedafdd14f%3A0x821ba08e5bb99e34!2sAv.%20Paulista%2C%20500!5e0!3m2!1spt-BR!2sbr!4v1641833428879!5m2!1spt-BR!2sbr" width="300" height="150" style="border: 3; border-color: rgb(172, 2, 2); border-style: groove;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.4911978502773!2d-46.647862674247335!3d-23.56907573769369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bedafdd14f%3A0x821ba08e5bb99e34!2sAv.%20Paulista%2C%20500!5e0!3m2!1spt-BR!2sbr!4v1641833428879!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0; border-color: rgb(172, 2, 2); border-style: groove;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
     </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="rodape">
+            <a href="https://www.instagram.com/crcastt/" target="blank">
+                <img class="tm-social" src="./assets/img/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/cezar-palomino/" target="blank">
+                <img class="tm-social" src="./assets/img/linkedin.png" alt="linkedin">
+            </a>
+        </div>
+        <p class="rodape" >
+            All Directs reserved: Cezar Palomino &copy
+        </p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
