@@ -176,19 +176,19 @@ button:hover{
     margin: 20px;
     border-style:solid;
     border: darkred;
-    display: flex;
+    display:flex;
     flex-flow:row;
     justify-content:space-around;
     align-items:flex-start;
 }
 
 .mapa {
-    width: 250;
-    height: 150;
+    width: 150px;
+    height: 150px;
     transition: .5s;
 }
 .mapa:hover {
-    width: 300px;
+    width: 250px;
     height: 250px;
 }
 
