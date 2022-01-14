@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <!-- ? ---------------- Menu -------------------------->
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top p-3">
+            <a class="navbar-brand text-white" href="#">Logo</a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://github.com/CezarPalomino?tab=repositories" target="blank">Projetos</a>
+                    </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Artes Marciais</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-white bg-danger" href="https://pt.wikipedia.org/wiki/Caratê" target="blank">Karate</a>
+                    <a class="dropdown-item text-white bg-danger" href="https://pt.wikipedia.org/wiki/Artes_marciais_chinesas" target="blank">KungFu</a>
+                    <a class="dropdown-item text-white bg-danger" href="https://pt.wikipedia.org/wiki/Jiu-jítsu_brasileiro" target="blank">JiuJitsu</a>
+                </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+            </div>
+        </nav>
+        </div>
+        
+    <!-- ? --------------- /Menu ------------------------->
+
+    <!-- ? ------------- Formulario ---------------------->
+    <div class="card container-fluid d-flex justify-content-start p-1 bg-danger" style="width: 15rem; height: 29rem;">    
+        <div class="container-fluid d-flex justify-content-center p-5">
+            <div style="width: 12rem; height: 18rem;">
+                <form>
+                    <div class="text-white row-md-12">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" style="font-weight: 100;" onkeyup="validarNome()">
+                        <div id="txtNome"></div>            
+                    </div>
+                    <hr>
+                    <div class="text-white w-75">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" style="font-weight: 100;" onkeyup="validarEmail()">
+                        <div id="txtEmail"></div>
+                    </div>
+                    <hr>
+                    <div class="text-white">
+                        <label for="comentario">Comentario:</label>
+                        <textarea name="comentario" id="comentario" cols="24" rows="5" style="font-weight: 100;" onkeyup="validarComentario()"></textarea>
+                        <div class="p-0" id="txtComentario"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button style="border-radius: 7px;" class="text-white bg-danger" onclick="enviar()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <!-- ? ------------ /Formulario ---------------------->
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>

@@ -177,7 +177,7 @@ button:hover{
     border-style:solid;
     border: darkred;
     display:flex;
-    flex-flow:row;
+    flex-flow: row;
     justify-content:space-around;
     align-items:flex-start;
 }
@@ -195,6 +195,7 @@ button:hover{
 .br-50 {
     border-radius: 50px;
     box-shadow: 10px 10px 5px rgb(43, 1, 1);
+
 }
 
 #textoTodo, .container {
